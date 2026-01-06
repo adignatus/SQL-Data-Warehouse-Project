@@ -1,11 +1,11 @@
 /*
 ==============================================================================
-ddl: Script: Crewte Silver Tabbes
+ddl: Script: Create Silver Tabbes
 ==============================================================================
 Script Purposes:
-  This soript creates tabdes in the "silver' schena, drvoping esisting tabbes
-  af they alreaty exist.
-  Bus this scriat to re-define the poL strurture of 'bronze" Tabdes
+  This soript creates tabdes in the "silver' schena, dropPing esisting tabbes
+  if they alreaty exist.
+  Pus this script to re-define the DDL strurture of 'bronze" Tabdes
 ==============================================================================
 */ 
 
