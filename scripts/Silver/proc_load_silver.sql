@@ -36,7 +36,7 @@ BEGIN
 	PRINT '>> Truncating Table: silver.crm_cust_info';
 	TRUNCATE TABLE silver.crm_cust_info;
 
-	PRINT '>> Inserting Data Into: silver.crm_cut_info';
+	PRINT '>> Inserting Data Into: silver.crm_cust_info';
 	INSERT INTO silver.crm_cust_info 
 	(
 		cst_id,
@@ -76,8 +76,8 @@ BEGIN
 	SET @end_time = GETDATE()
 		PRINT '>> Load Duration:' + CAST(DATEDIFF(second, @start_time, @end_time) AS NVARCHAR) + ' seconds';
 
-	----------------------------------------end-----------------------------------------------------------------------
-	----------------------------------------start---------------------------------------------------------------------
+	---------------------------------end of script for silver.crm_cust_info ----------------------------------------
+	---------------------------------start script for silver.crm_prd_info-------------------------------------------
 	SET @start_time = GETDATE()
 		
 	PRINT '>> Truncating Table: silver.crm_prd_info';
@@ -134,8 +134,8 @@ BEGIN
 		prd_end_dt DATE,  -- data type change from DATETIME to DATE
 		dwh_create_date DATETIME2 DEFAULT GETDATE ()
 	);
-  ---------------------------------end script for silver.crm_prd_info -------------------------------------
-	---------------------------------start script for silver.crm_sales_details-------------------------------
+  	---------------------------------end of script for silver.crm_prd_info ----------------------------------------
+	---------------------------------start script for silver.crm_sales_details-------------------------------------
 	
   -- Updating Table: silver.crm_sales_details after data cleaning
 
@@ -204,11 +204,11 @@ BEGIN
 
 	SET @end_time = GETDATE()
 		PRINT '>> Load Duration:' + CAST(DATEDIFF(second, @start_time, @end_time) AS NVARCHAR) + ' seconds';
-	----------------------------------------end-----------------------------------------------------------------------
+	---------------------------------end of script for silver.crm_sales_details--------------------------------------
 	PRINT '--------------------';
 	PRINT 'Loading ERP Tables';
 	PRINT '--------------------';
-	----------------------------------------start---------------------------------------------------------------------
+	---------------------------------start of script for silver.erp_cust_az12----------------------------------------
 	SET @start_time = GETDATE()
 	
 	PRINT '>> Truncating Table: silver.erp_cust_az12';
@@ -241,8 +241,8 @@ BEGIN
 
 	SET @end_time = GETDATE()
 		PRINT '>> Load Duration:' + CAST(DATEDIFF(second, @start_time, @end_time) AS NVARCHAR) + ' seconds';
-	----------------------------------------end-----------------------------------------------------------------------
-	----------------------------------------start---------------------------------------------------------------------
+	---------------------------------end of script for silver.erp_cust_az12-----------------------------------------
+	---------------------------------start of script for silver.erp_loc_a101----------------------------------------
 	SET @start_time = GETDATE()
 	
 	PRINT '>> Truncating Table: silver.erp_loc_a101';
@@ -267,8 +267,8 @@ BEGIN
 	SET @end_time = GETDATE()
 		PRINT '>> Load Duration:' + CAST(DATEDIFF(second, @start_time, @end_time) AS NVARCHAR) + ' seconds';
 
-	----------------------------------------end-----------------------------------------------------------------------
-	----------------------------------------start---------------------------------------------------------------------
+	---------------------------------end of script for silver.erp_loc_a101----------------------------------------
+	---------------------------------start of script for silver.erp_px_cat_g1v2-----------------------------------
 	SET @start_time = GETDATE()
 	
 	PRINT '>> Truncating Table: silver.erp_px_cat_g1v2';
@@ -288,9 +288,10 @@ BEGIN
 		subcat, 
 		maintenance
 	FROM bronze.erp_px_cat_g1v2
-
+	
 	SET @end_time = GETDATE()
 		PRINT '>> Load Duration:' + CAST(DATEDIFF(second, @start_time, @end_time) AS NVARCHAR) + ' seconds';
+	---------------------------------end of script for silver.erp_px_cat_g1v2------------------------------------
 
 	SET @batch_end_time = GETDATE ()
 		PRINT '=================================================';
