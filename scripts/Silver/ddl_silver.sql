@@ -3,9 +3,9 @@
 ddl: Script: Create Silver Tabbes
 ==============================================================================
 Script Purposes:
-  This soript creates tabdes in the "silver' schena, dropPing esisting tabbes
-  if they alreaty exist.
-  Pus this script to re-define the DDL strurture of 'bronze" Tabdes
+  This soript creates tabdes in the "silver' schema, dropPing existing tabbes
+  if they already exist.
+  Push this script to re-define the DDL strurture of 'bronze" Tabdes
 ==============================================================================
 */ 
 
@@ -143,3 +143,19 @@ IF OBJECT_ID ('silver.crm_prd_info', 'U') IS NOT NULL
 	);
 -- Reloading silver layer with it updated DDL data types 
 EXEC silver.load_silver
+
+-- Update on silver.crm_cust_info cst_id from INT to NVARCHAR
+IF OBJECT_ID ('silver.crm_cust_info', 'U') IS NOT NULL
+DROP TABLE silver.crm_cust_info;
+GO
+CREATE TABLE silver.crm_cust_info 
+(
+	cst_id NVARCHAR (50),-- Data type was INT but had a challenge joining it with another tables ID which was NVARCHAR.
+	cst_key NVARCHAR (50),
+	cst_firstname NVARCHAR (50),
+	cst_lastname NVARCHAR (50),
+	cst_marital_status NVARCHAR (50),
+	cst_gndr NVARCHAR (50),
+	cst_create_date DATE,
+	dwh_create_date DATETIME2 DEFAULT GETDATE ()
+);
