@@ -12,7 +12,7 @@ The Gold Layer is the business-level data representation within the Medallion ar
 
 ---
 
-## gold_dim_customers
+## 1. gold_dim_customers
 
 **Purpose:** Stores customer master data enriched with demographics and geographic information for analytical segmentation and reporting.
 
@@ -39,7 +39,7 @@ The Gold Layer is the business-level data representation within the Medallion ar
 
 ---
 
-## gold_dim_products
+## 2. gold_dim_products
 
 **Purpose:** Provides comprehensive product master data with hierarchical categorization and attributes for product performance analysis and inventory reporting.
 
@@ -67,7 +67,7 @@ The Gold Layer is the business-level data representation within the Medallion ar
 
 ---
 
-## gold_fact_sales
+## 3. gold_fact_sales
 
 **Purpose:** Stores transactional sales data at the order line item level for sales performance analysis, revenue tracking, and customer purchasing behavior insights.
 
