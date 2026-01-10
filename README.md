@@ -1,5 +1,5 @@
-**📊 SQL Data Warehouse Project (Medallion Architecture)
-📌 Project Overview**
+**📊 SQL Data Warehouse Project (Medallion Architecture)**
+**📌 Project Overview**
 
 This project demonstrates the end-to-end design and implementation of a modern SQL-based Data Warehouse using the Medallion Architecture (Bronze → Silver → Gold).
 
@@ -47,8 +47,8 @@ The solution follows the Medallion Architecture pattern:
 
 - Fact and dimension tables optimized for BI tools
 
-**🧩 Data Sources
-CRM System**
+**🧩 Data Sources**
+**CRM System**
 
 - Customer information
 
@@ -109,8 +109,8 @@ Extensive data quality checks were implemented, including:
 
 Quality checks are documented in the /Tests/ folder for the Silver & Gold layers.
 
-**⚙️ ETL & Transformation Logic
-. Stored Procedures**
+**⚙️ ETL & Transformation Logic**
+**. Stored Procedures**
   - Centralized ETL logic using SQL stored procedures
   - Truncation and reload strategy for Silver layer
   - Robust error handling with TRY…CATCH
@@ -155,16 +155,19 @@ SQL Server (T-SQL)
 
 **📁 Repository Structure**
 ├── diagrams/
+
 │   ├── Data Architecture
 │   ├── Integration Model
 │   ├── Data Flow
 │   └── Star Schema
 │
+
 ├── sql/
 │   ├── bronze/
 │   ├── silver/
 │   └── gold/
 │
+
 ├── data_catalog.md
 └── README.md
 
@@ -195,18 +198,18 @@ This project simulates a real-world enterprise data warehouse and demonstrates t
 
 - Document and version-control data solutions professionally
 
-**📌 Next Enhancements (Optional)
+**📌 Next Enhancements (Optional)**
 
-Incremental loading strategy
+- Incremental loading strategy
 
-Audit & logging tables
+- Audit & logging tables
 
-Performance indexing
+- Performance indexing
 
-BI dashboard integration (Power BI / Tableau)**
+- BI dashboard integration (Power BI / Tableau)
 
-**👤 Author
+**👤 Author**
 
-Ignatus Dennis Acquah
-BSc Business Administration (Banking & Finance)
-Aspiring Data Analyst / Data Engineer**
+**Ignatus Dennis Acquah**
+**BSc Business Administration (Banking & Finance)**
+**Aspiring Data Analyst / Data Engineer**
