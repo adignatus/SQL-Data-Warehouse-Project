@@ -15,7 +15,7 @@ The goal is to transform raw operational data into analytics-ready datasets suit
 
 The solution follows the Medallion Architecture pattern:  
 
-<img width="881" height="613" alt="image" src="https://github.com/user-attachments/assets/fbf51810-3da5-492f-b165-7380bcf52022" />
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/fbf51810-3da5-492f-b165-7380bcf52022" />
 
 
 **🥉 Bronze Layer (Raw Data)**
@@ -49,7 +49,7 @@ The solution follows the Medallion Architecture pattern:
 
 **🔄 Data Flow**  
 
-<img width="923" height="561" alt="image" src="https://github.com/user-attachments/assets/f30c9228-023a-4f25-b294-0738861e2f9e" />
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/f30c9228-023a-4f25-b294-0738861e2f9e" />
 
 * Source systems load raw data into Bronze Layer
 
@@ -115,15 +115,15 @@ This structure is optimized for:
 
 **📁 Repository Structure**  
 ├── diagrams/<br>
-│   ├── Data Architecture <br>
-│   ├── Integration Model<br>
-│   ├── Data Flow<br>
-│   └── Star Schema<br>
+│    ├── Data Architecture <br>
+│    ├── Integration Model<br>
+│    ├── Data Flow<br>
+│    └── Star Schema<br>
 │  
 ├── sql/  
-│   ├── bronze/  
-│   ├── silver/  
-│   └── gold/  
+│    ├── bronze/  
+│    ├── silver/  
+│    └── gold/  
 │  
 ├── data_catalog.md  
 └── README.md  
