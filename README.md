@@ -12,8 +12,9 @@ This project demonstrates the end-to-end design and implementation of a modern S
 The goal is to transform raw operational data into analytics-ready datasets suitable for reporting and decision-making.
 
 **🏗️ Architecture Overview**  
-The solution follows the Medallion Architecture pattern:
-<img width="1200" height="700" alt="image" src="https://github.com/user-attachments/assets/41281055-7800-468f-8616-5783fbf7a644" />
+The solution follows the Medallion Architecture pattern:  
+
+<img width="1000" height="650" alt="image" src="https://github.com/user-attachments/assets/41281055-7800-468f-8616-5783fbf7a644" />
 
 **🥉 Bronze Layer (Raw Data)**
 - Stores raw ingested data from CRM and ERP systems
