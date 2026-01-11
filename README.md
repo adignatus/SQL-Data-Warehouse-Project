@@ -1,4 +1,5 @@
 **📊 SQL Data Warehouse Project (Medallion Architecture)**  
+
 **📌 Project Overview**
 
 This project demonstrates the end-to-end design and implementation of a modern SQL-based Data Warehouse using the Medallion Architecture (Bronze → Silver → Gold).
