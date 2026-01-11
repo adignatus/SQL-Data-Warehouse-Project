@@ -47,7 +47,7 @@ The solution follows the Medallion Architecture pattern:
 
 - Fact and dimension tables optimized for BI tools
 
-**🧩 Data Sources**
+**🧩 Data Sources** <br>
 **CRM System**
 
 - Customer information
@@ -154,12 +154,11 @@ SQL Server (T-SQL)
 - Draw.io (architecture & data modeling diagrams)
 
 **📁 Repository Structure**
-├── diagrams/
-
-│   ├── Data Architecture
-│   ├── Integration Model
-│   ├── Data Flow
-│   └── Star Schema
+├── diagrams/<br>
+│   ├── Data Architecture <br>
+│   ├── Integration Model<br>
+│   ├── Data Flow<br>
+│   └── Star Schema<br>
 │
 
 ├── sql/
