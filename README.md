@@ -125,9 +125,9 @@ This structure is optimized for:
 │    ├── silver/  
 │    └── gold/  
 │  
-├── tests/
+├── tests/  
 │    └── quality & checks/  
-│
+│  
 ├── data_catalog.md  
 └── README.md  
 
