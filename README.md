@@ -2,87 +2,58 @@
 
 **📌 Project Overview**
 
-This project demonstrates the end-to-end design and implementation of a modern SQL-based Data Warehouse using the Medallion Architecture (Bronze → Silver → Gold).
-
+This project demonstrates the end-to-end design and implementation of a modern SQL-based Data Warehouse using the Medallion Architecture (Bronze → Silver → Gold).  
 - It covers:
-
 - Data architecture design
-
 - Data integration and transformation
-
 - Data quality validation
-
 - Dimensional modeling (Star Schema)
-
 - Production-style SQL scripting and documentation
-
 The goal is to transform raw operational data into analytics-ready datasets suitable for reporting and decision-making.
 
-**🏗️ Architecture Overview**
-
+**🏗️ Architecture Overview**  
 The solution follows the Medallion Architecture pattern:
 
 **🥉 Bronze Layer (Raw Data)**
-
 - Stores raw ingested data from CRM and ERP systems
 - No transformation
 - Preserves original source values for traceability
 
-**🥈 Silver Layer (Cleansed & Conformed)**
-
+**🥈 Silver Layer (Cleansed & Conformed)**  
 - Data cleansing and standardization
-
 - Deduplication and validation
-
 - Business rule enforcement
-
 - Data type alignment to enable joins across systems
 
 **🥇 Gold Layer (Analytics & Reporting)**
-
 - Dimensional data modeling
-
 - Star schema design
-
 - Surrogate keys
-
 - Fact and dimension tables optimized for BI tools
 
 **🧩 Data Sources** <br>
+
 **CRM System**
-
 - Customer information
-
 - Product details
-
 - Sales transactions
 
-- ERP System
-
+**ERP System**
 - Customer demographics
-
 - Location data
-
 - Product categories
 
-**🔄 Data Flow**
-
+**🔄 Data Flow**  
 * Source systems load raw data into Bronze Layer
 
 * Silver layer:
-
-  - Cleans data
-
+  - Cleans data  
   - Resolves data quality issues
-
   - Standardizes keys and attributes
 
 * Gold layer:
-
   - Builds dimensional models
-  
   - Creates fact–dimension relationships
-  
   - Prepares data for analytics and reporting
 
 **📁 Visual diagrams are included in the docs/diagrams/ folder:**
