@@ -155,6 +155,8 @@ This project simulates a real-world enterprise data warehouse and demonstrates t
 
 **👤 Author**
 
-**Ignatus Dennis Acquah**
-**BSc Business Administration (Finance & Banking)**
-**Aspiring Data Analyst / Data Engineer**
+**Ignatus Dennis Acquah**  
+
+**BSc Business Administration (Finance & Banking)**  
+
+**Aspiring Data Analyst / Data Engineer**  
