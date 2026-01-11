@@ -13,7 +13,7 @@ The goal is to transform raw operational data into analytics-ready datasets suit
 
 **🏗️ Architecture Overview**  
 The solution follows the Medallion Architecture pattern:
-<img width="1273" height="757" alt="image" src="https://github.com/user-attachments/assets/41281055-7800-468f-8616-5783fbf7a644" />
+<img width="1200" height="700" alt="image" src="https://github.com/user-attachments/assets/41281055-7800-468f-8616-5783fbf7a644" />
 
 **🥉 Bronze Layer (Raw Data)**
 - Stores raw ingested data from CRM and ERP systems
