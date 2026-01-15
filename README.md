@@ -160,4 +160,4 @@ This project simulates a real-world enterprise data warehouse and demonstrates t
 **BSc Business Administration (Finance & Banking)**  
 
 **Aspiring Data Analyst / Data Engineer**  
-**Email: acquahdennis99@gmail.com**
+**Email: adignatus@gmail.com**
